@@ -12,7 +12,7 @@ class CtrlTickets extends CI_Controller
        //$this->load->model("Model_Accueil");
        //$data['mdp'] = $_GET('mdp');
         //$data['login'] = $_GET('login');
-       $this->load->model("Model_Accueil");
+       //$this->load->model("Model_Accueil");
       // $this->load->Model_Accueil->GetLogin($data['login']);
        
         
@@ -22,7 +22,7 @@ class CtrlTickets extends CI_Controller
     function verifierLogin()
     {
        
-        $login = $_GET('login');
+        $login = $_GET['login'];
         $this->load->model("Model_Accueil");
          
         $data['leLogin'] = $this->load->Model_Accueil->GetLogin($login);
@@ -34,7 +34,7 @@ class CtrlTickets extends CI_Controller
     }
     function verifierMdp()
                 { 
-                    $mdp = $_GET('mdp');
+                    $mdp = $_GET['mdp'];
                     
                     $this->load->model("Model_Accueil");
 

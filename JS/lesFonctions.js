@@ -7,6 +7,7 @@ function afficherTickets()
             data:"login="+$('#login').val()+"&mdp="+$('#mdp').val(),
             success:function(data)
             {
+                alert('Ca fonctionne');
                 $('#div1').empty(); 
                 $('#div1').append(data);
             },
